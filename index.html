@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,800;1,300;1,800&display=swap');
+        * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+}
+.back{
+  display: inline-block;
+  z-index: -1;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5em 1em;
+  text-align: center;
+}
+.row h1{
+  color: white;
+}
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #1f003b;
+}
+h3{
+  font-size: 1.6em;
+  font-weight: 300;
+}
+.card {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 3.5em 1em;
+  border-radius: 2em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #a993ff;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+  transition: 1000ms;
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card h3 {
+  font-weight: 600;
+}
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+  transition: 500ms;
+}
+.card a:hover{
+  background-color: #1f003b;
+  padding: 5px 10px;
+  transition: 500ms;
+  border-radius: 0.5em;
+}
+.card:hover {
+    cursor:pointer;
+  background: linear-gradient(#6045ea, #8567f7);
+  color: #ffffff;
+}
+.card:hover .img-container {
+  transition: 1000ms;
+  transform: scale(1.5);
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+    height: 200vh;
+  }
+  .back{
+    display: inline-block;
+  z-index: -1;
+}
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+    height: 200vh;
+  }
+  .card {
+    padding: 5em 1em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+  }
+  .one{
+    order: 1;
+  }
+  .two{
+order: 2;
+  }
+  .three{
+    order: 3;
+  }
+  .back{
+    display: none;
+  z-index: -1;
+}
+}
+        section{
+            width: 100%;
+            height: 100vh;
+            color: #fff;
+            background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+            background-size: 400% 400%;
+            position: relative;
+            animation: change 10s ease-in-out infinite;
+        }
+        
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section>
+            <div class="row">
+                <h1>Our Team</h1>
+            </div>
+            <div class="row">
+                <!-- Column 1-->
+                <div class="column two">
+                    <div class="card">
+                      <div class="img-container">
+                        <img src="images/avatar.png" />
+                      </div>
+                      <h3>Kiran Kumar Behera</h3>
+                      <p>19103328</p>
+                      <p>Developer</p>
+                      <div class="icons">
+                        <a href="https://www.linkedin.com/in/kiran-kumar-behera-511198212">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/KiranKumarBehera">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:hero.kk07@gmail.com">
+                          <i class="fas fa-envelope"></i>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                <!-- Column 2-->
+                <div class="column one" >
+                  <div class="card">
+                    <div class="img-container">
+                      <img src="images/avatar2.png" />
+                    </div>
+                    <h3>Gopal Patidar</h3>
+                    <p>19103317</p>
+                    <p>Developer</p>
+                    <div class="icons">
+                      <a href="https://www.linkedin.com/in/gopal-patidar-048b661b3">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                      <a href="https://github.com/Gopalptdr">
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a href="mailto:patidargopal973@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                    
+                </div>
+                <!-- Column 3-->
+                <div class="column three">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="images/avatar3.jpg" />
+                        </div>
+                        <h3>Amardeep</h3>
+                        <p>19103305</p>
+                        <p>Developer</p>
+                        <div class="icons">
+                            <a href=" https://www.linkedin.com/in/amardeep0123">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/iam-amardeep173">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:amardeepg1236@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<section class="back"></section>
+</body>
+</html>
+
+
+
